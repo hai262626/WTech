@@ -35,7 +35,69 @@
 </header>
 
 <main>
-<p>&nbsp;</p>
+  <div class="contact-section">
+    <h1>Contact Us</h1>
+    <div class="contact-container">
+      <form id="contactForm" class="contact-form">
+        <div class="form-group">
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" name="firstName" required>
+        </div>
+
+        <div class="form-group">
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" name="lastName" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="country">Country:</label>
+          <select id="country" name="country" required>
+            <option value="">-- Select Country --</option>
+            <option value="Vietnam">Vietnam</option>
+            <option value="Thailand">Thailand</option>
+            <option value="Philippines">Philippines</option>
+            <option value="Indonesia">Indonesia</option>
+            <option value="Malaysia">Malaysia</option>
+            <option value="Singapore">Singapore</option>
+            <option value="Cambodia">Cambodia</option>
+            <option value="Laos">Laos</option>
+            <option value="Myanmar">Myanmar</option>
+            <option value="Brunei">Brunei</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="musicGenre">Favorite Music Genre:</label>
+          <select id="musicGenre" name="musicGenre" required>
+            <option value="">-- Select Genre --</option>
+            <option value="Pop">Pop</option>
+            <option value="Rock">Rock</option>
+            <option value="Hip Hop">Hip Hop</option>
+            <option value="Jazz">Jazz</option>
+            <option value="Classical">Classical</option>
+            <option value="Electronic">Electronic</option>
+            <option value="R&B">R&B</option>
+            <option value="Country">Country</option>
+            <option value="Folk">Folk</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="instrument">What instrument do you play?</label>
+          <textarea id="instrument" name="instrument" rows="5" placeholder="Tell us about the instruments you play..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">Submit</button>
+      </form>
+    </div>
+  </div>
 </main>
 
 <footer>
@@ -43,4 +105,5 @@
 </footer>
 
 </body>
+<script src="../assets/js/contact.js"></script>
 </html>
